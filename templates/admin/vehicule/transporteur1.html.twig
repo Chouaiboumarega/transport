@@ -1,0 +1,58 @@
+
+
+{% block body %}
+
+<style>
+.V8{
+ background-color: rgba(8,12,36,0.905506432056427);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  
+}
+.editchauffeur{
+  position: absolute;
+     top: 24%;
+    left: 32%;
+}
+.cardchauffeur{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color:white;
+  font-size:35px;
+}
+.retourchauffeur{
+    
+    text-decoration:none;
+    color:white;
+    font-size:36px;
+    position: relative;
+    top: 56px;
+    left: 34%;
+     background: red;
+
+}
+.btnretour{
+   text-decoration:none;
+    color:white
+}
+</style>
+<img class="V8" src="../asset/images/andco.jpg" alt="">
+<button class="retourchauffeur"><a class="btnretour" href="{{path ('vehicules')}}">Retour à la liste des vehicules</a></button>
+<div class="Editchauffeur">
+    <div class="cardchauffeur">
+        <p class="card-text">N° immatriculation: {{transporteur1.matricule}}</p>
+        <p class="card-text">Assurance {{transporteur1.assurance}}</p>
+        <p class="card-text">Controle technique: {{transporteur1.controle}}</p>
+        <p class="card-text">Date de mise en circulation: {{transporteur1.circulation}}</p>
+        <p class="card-text">Entretien: {{transporteur1.entretien}}</p>    
+        <p class="card-text">kilometrage: {{transporteur1.kilometres}}</p>   
+    </div>
+</div>
+
+</div>
+{% endblock %}

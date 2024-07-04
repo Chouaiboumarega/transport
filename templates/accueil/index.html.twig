@@ -1,0 +1,314 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+
+ 
+
+
+<canvas id="canvas" width="800" height="200"></canvas>
+
+<div class="V8">
+    <div class="dynamic-text">
+  <span class="text">Pilotez votre activite de transport <br> routier avec   le systeme de gestion <br> le plus performant  de Bordeaux Lac</span>
+</div>
+</div>
+<div class="box0">
+      <div class="group0">
+        <div class="overlap-group0"><div class="text-wrapper0">Services</div></div>
+      </div>
+    </div>
+
+<div class="boxx">
+      <div class="group">
+        <div class="overlap-group-wrapper">
+          <div class="overlap">
+            <div class="div-wrapper">
+              <div class="overlap-group"><div class="text-wrapper">Management Chauffeurs</div></div>
+            </div>
+            <div class="frame">
+              <div class="group-wrapper">
+                <button class="show-text-button1">Voir plus</button>
+                <div class="dynamic-text1">
+                  <span class="text1">Un logiciel de gestion des chauffeurs pour gérer efficacement les performances des chauffeurs et optimiser la productivité des itinéraires.
+
+Pour gagner des parts de marché et rester rentable dans un environnement toujours plus concurrentiel, il est primordial de gérer efficacement les performances des chauffeurs et les demandes de service des clients. Voici cinq solutions pour vous aider à optimiser vos performances.<img class="mt331" src="../asset/images/MT33.png" alt=""></span>
+                  <button class="hide-text-button1">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-2">
+            <div class="group-2">
+              <div class="overlap-group-2"><div class="text-wrapper-3">Gestion Parc</div></div>
+            </div>
+            <div class="frame-2">
+              <div class="group-3">
+              <button class="show-text-button2">Voir plus</button>
+                <div class="dynamic-text2">
+                  <span class="text2">La gestion de flottes automobiles ou Car Fleet Management, c'est tout simplement le fait de gérer son parc de véhicules entreprise.<img class="mt332" src="../asset/images/MT33.png" alt=""> </span>
+                <button class="hide-text-button2">Fermer </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-4">
+          <div class="overlap-3">
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group-3"><div class="text-wrapper-4">Facturation</div></div>
+            </div>
+            <div class="frame-3">
+              <div class="group-5">
+                <button class="show-text-button3">Voir plus</button>
+                <div class="dynamic-text3">
+                  <span class="text3">La facture électronique se démocratise dans tous les secteurs. L’utilisation de factures électroniques pour les entreprises privées qui traitent avec des établissements publics est même une obligation légale, qui concernera bientôt toutes les entreprises.<img class="mt333" src="../asset/images/MT33.png" alt=""> </span>
+                  <button class="hide-text-button3">Fermer </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-6">
+          <div class="overlap-4">
+            <div class="group-7">
+              <div class="KPI-TRANSPORT-wrapper"><div class="KPI-TRANSPORT">KPI&nbsp;&nbsp;Transport</div></div>
+            </div>
+            <div class="frame-4">
+              <div class="group-8">
+                <button class="show-text-button4">Voir plus</button>
+                <div class="dynamic-text4">
+                  <span class="text4">Les indicateurs de performances sont nombreux et la pertinence de chacun dépend de l’activité de l’entreprise. Pour bien profiter des KPIs, il est important d’adapter ces conseils à votre situation particulière.<img class="mt33" src="../asset/images/MT33.png" alt=""></span>
+                  <button class="hide-text-button4">Fermer </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="fonct">
+    <h1 class="fon">Gestion d'activité</h1>
+</div>
+{% if is_granted('ROLE_USER') %}
+
+<div class="box2">
+      <div class="group">
+        <div class="overlap">
+          <div class="div">
+            <img class="ellipse">
+            <div class="overlap-group">
+              <div class="text-wrapper"><a class="activite" href="">Ma Facturation</a></div>
+              <p class="p"></p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="overlap-2">
+          <div class="group-2">
+            <img class="img" src="" />
+            <div class="overlap-3">
+              <div class="text-wrapper-3"><a class="activite" href="">Chauffeurs</a></div>
+             
+            </div>
+          </div>
+           </div>
+        <div class="overlap-4">
+          <div class="group-wrapper">
+            <div class="group-3">
+              <div class="group-4">
+                <img class="ellipse-2" src="" />
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-5"><a class="activite" href="">Vehicules</a></div>
+                  <p class="text-wrapper-6"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-5">
+            
+          </div>
+        </div>
+        <div class="overlap-6">
+          <div class="group-6">
+            <div class="group-7">
+              <img class="ellipse-3" src="" />
+              <div class="overlap-group-3">
+                <div class="text-wrapper-8"><a class="activite" href="">Indicateurs de performances</a></div>
+                <div class="text-wrapper-9"></div>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+      </div>
+
+{% endif %}
+<div class="box3">
+      <div class="group3">
+        <div class="overlap-group3">
+          <p class="text-wrapper3">Améliorez les métriques interactives pour des services fiables</p>
+          <p class="div3">Améliorez les métriques interactives pour des services fiables</p>
+          <p class="p">Améliorez les métriques interactives pour des services fiables</p>
+          <div class="text-wrapper-23">SERVICE SECURISE</div>
+          <div class="text-wrapper-33">SUPPORT DISPONIBLE 24/7</div>
+          <div class="text-wrapper-43">SECURITE ET FIABILITE</div>
+          <div class="overlap3"><img class="rectangle3" src="" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="group4">
+        <div class="overlap-group4"><div class="text-wrapper4">NOTRE EQUIPE</div></div>
+      </div>
+    </div>
+
+  <!--Caroussel-->
+
+  <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+          <div class="caroussel">
+            <div class="slide-containerc">
+              <div class="slide-contentc">
+                <div class="card-wrapperc">
+                  <div class="cardc">
+                    <div class="image-contentc">
+                      <span class="overlayc"></span>
+                      <div class="card-imagec">
+                        <img src="" alt="" class="card-imgc">
+                      </div>
+                    </div>
+                    <div class="card-contentc">
+                      <h2 class="name">Chouaibou</h2>
+                      <p class="description">blablabla</p>
+                      <button class="buttonc">View more</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+    </div>
+    <div class="carousel-item">
+          <div class="caroussel">
+            <div class="slide-containerc">
+              <div class="slide-contentc">
+                <div class="card-wrapperc">
+                  <div class="cardc">
+                    <div class="image-contentc">
+                      <span class="overlayc"></span>
+                      <div class="card-imagec">
+                        <img src="" alt="" class="card-imgc">
+                      </div>
+                    </div>
+                    <div class="card-contentc">
+                      <h2 class="name">Chouaibou</h2>
+                      <p class="description">blablabla</p>
+                      <button class="buttonc">View more</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+    </div>
+    <div class="carousel-item">
+          <div class="caroussel">
+            <div class="slide-containerc">
+              <div class="slide-contentc">
+                <div class="card-wrapperc">
+                  <div class="cardc">
+                    <div class="image-contentc">
+                      <span class="overlayc"></span>
+                      <div class="card-imagec">
+                        <img src="" alt="" class="card-imgc">
+                      </div>
+                    </div>
+                    <div class="card-contentc">
+                      <h2 class="name">Chouaibou</h2>
+                      <p class="description">blablabla</p>
+                      <button class="buttonc">View more</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+<script>
+
+
+const showButton1 = document.querySelector('.show-text-button1');
+const hideButton1 = document.querySelector('.hide-text-button1');
+const text1 = document.querySelector('.dynamic-text1');
+
+showButton1.addEventListener('click', () => {
+  text1.style.display = 'block';
+});
+
+hideButton1.addEventListener('click', () => {
+  text1.style.display = 'none';
+});
+
+const showButton2 = document.querySelector('.show-text-button2');
+const hideButton2 = document.querySelector('.hide-text-button2');
+const text2 = document.querySelector('.dynamic-text2');
+
+showButton2.addEventListener('click', () => {
+  text2.style.display = 'block';
+});
+
+hideButton2.addEventListener('click', () => {
+  text2.style.display = 'none';
+});
+
+const showButton3 = document.querySelector('.show-text-button3');
+const hideButton3 = document.querySelector('.hide-text-button3');
+const text3 = document.querySelector('.dynamic-text3');
+
+showButton3.addEventListener('click', () => {
+  text3.style.display = 'block';
+});
+
+hideButton3.addEventListener('click', () => {
+  text3.style.display = 'none';
+});
+
+const showButton4 = document.querySelector('.show-text-button4');
+const hideButton4 = document.querySelector('.hide-text-button4');
+const text4 = document.querySelector('.dynamic-text4');
+
+showButton4.addEventListener('click', () => {
+  text4.style.display = 'block';
+});
+
+hideButton4.addEventListener('click', () => {
+  text4.style.display = 'none';
+});
+
+
+
+const text = document.querySelector('.text');
+
+// Change the text after 5 seconds
+setTimeout(() => {
+  text.textContent = 'Optimisez vos itinéraires et facilitez votre gestion';
+}, 5000);
+
+</script>
+<div class="footer">
+    {% include('_footer.html.twig') %}
+</div>
+{% endblock %}

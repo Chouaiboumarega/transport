@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier User{% endblock %}
+
+{% block body %}
+<div class="V8">
+</div>
+
+<div class="">
+<h2 class="chauffeur">Nos Chauffeurs</h2>
+<a href="{{path ('chauffeur')}}"><img class="ajouterchauff" src="../asset/images/ajouter.png" alt=""></a>
+    <div class="container">
+    
+    <table>
+     
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>N° Permis</th>
+                <th>Age</th>
+                <th>Date d'embauche</th>
+                <th>Type contrat</th>
+                 <th>Voir</th>
+                <th class="actionn">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for chauffeurs in chauffeurs %}
+            <tr>
+                <td>{{chauffeurs.nom}}</td>
+                <td>{{chauffeurs.prenom}}</td>
+                <td>{{chauffeurs.permis}}</td>
+                <td>{{chauffeurs.date}}</td>
+                <td>{{chauffeurs.embauche}}</td>
+                <td>{{chauffeurs.contrat}}</td>
+                <td> <a href="{{ path('transporteur2', {'id':chauffeurs.id}) }}"><img class="oeil" src="../asset/images/oeil.png" alt=""></a></td>
+                <td class="actionner">
+                <button class="modif" type="button"><a class="modifier" href="{{ path('editchauffeur', {'id': chauffeurs.id}) }}">Modifier</a>
+                {% if is_granted('ROLE_ADMIN') %}
+                </button><button class="supp" type=""><a class="supprimer" href="{{ path('deletechauffeur', {'id': chauffeurs.id}) }}">Supprimer</a></button>
+                {% endif %}
+                </td>
+                
+            </tr>
+           
+            {% endfor %}
+        </tbody>
+    </table>
+  
+</div>
+</div>
+
+
+<div class="footer">
+ 
+</div>
+{% endblock %}

@@ -1,0 +1,278 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+<div class="V8">
+</div>
+ 
+<body>
+
+    <div class="">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="boxxx">
+                        <h1>2341</h1>
+                        <h3><img class="users" src="../asset/images/chauffeur.png" alt=""><a href="{{path ('chauffeurs')}}">Chauffeurs</a></h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="boxxx">
+                        <h1>2341</h1>
+                        <h3><img class="users" src="../asset/images/vehicule.png" alt=""><a href="{{path ('vehicules')}}">Vehicules</a></h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="boxxx">
+                        <h1>2341</h1>
+                        <h3><img class="users" src="../asset/images/user.png" alt=""><a href="{{path ('user')}}">Users</a></h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="boxxx">
+                        <h1>2341</h1>
+                        <h3><a href="">Facturation</a></h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+<div class="chart-container">
+    <canvas class="char" id="myChart"></canvas>
+    <canvas class="dep" id="myDep"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script>const ctx = document.getElementById('myChart');
+const config = {
+  type: 'doughnut',
+  data: {
+    labels: ['Janv-24', 'Févr-24', 'Mars-24', 'Avr-24', 'Mai-24'],
+    datasets: [{
+      label: 'Livraisons',
+      data: [43, 54, 34, 43, 56],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(153, 102, 255)'
+      ],
+      hoverOffset: 7
+    }]
+  }
+};
+new Chart(ctx, config);
+
+const cty = document.getElementById('myDep').getContext('2d');
+const configu = {
+  type: 'bar',
+  data: {
+    labels: ['Janv-24', 'Févr-24', 'Mars-24', 'Avr-24', 'Mai-24'],
+    datasets: [{
+      label: 'Depenses',
+      data: [432, 543, 324, 843, 456],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(153, 102, 255)'
+      ],
+      hoverOffset: 7
+    }]
+  }
+};
+new Chart(cty, configu);</script>
+
+
+
+
+                <!--<div class="recent-payments">
+                    
+                    <table>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>Permis</th>
+                            <th>Autre</th>
+                        </tr>
+                        <tr>
+                            <td>Chouaibou</td>
+                            <td>Marega</td>
+                            <td>12354</td>
+                            <td><a href="" class="btn">Voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Diouma</td>
+                            <td>Marega</td>
+                            <td>12354</td>
+                            <td><a href="" class="btn">Voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hatta</td>
+                            <td>Marega</td>
+                            <td>12354</td>
+                            <td><a href="" class="btn">Voir</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mmma</td>
+                            <td>Marega</td>
+                            <td>12354</td>
+                            <td><a href="" class="btn">Voir</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <div class="new-students">
+                    <div class="title">
+                        <h2></h2>
+                        <a href="" class="btn">Voir Tous</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Profil</th>
+                            <th>Nom</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td><img src="../asset/images/user.png" alt=""></td>
+                            <td>Mmma</td>
+                            <td>Marega</td>
+                          
+                        </tr>
+                        <tr>
+                            <td><img src="../asset/images/user.png" alt=""></td>
+                            <td>Mmma</td>
+                            <td>Marega</td>
+                       
+                        </tr>
+                        <tr>
+                            <td><img src="../asset/images/user.png" alt=""></td>
+                            <td>Mmma</td>
+                            <td>Marega</td>
+                            
+                        </tr>
+                        
+                    </table>
+                </div>-->
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="">
+
+
+{% if is_granted('ROLE_ADMIN') %}
+    <div class="dashboard">
+    <div class="card">
+      <a href="{{path ('user')}}"><img class="users" src="../asset/images/user.png" alt=""></a>
+    </div>
+    <div class="card">
+      <a href="{{path ('vehicules')}}"><img class="users" src="../asset/images/vehicule.png" alt=""></a>
+    </div>
+    <div class="card">
+       <a href="{{path ('chauffeurs')}}"><img class="users" src="../asset/images/chauffeur.png" alt=""></a>
+    </div>
+    <div class="card">
+      <a href=""><img class="users" src="../asset/images/kpi.png" alt=""></a>
+    </div>
+  </div>
+{% endif %}
+
+
+
+
+
+</div>  
+<div class="chart-container">
+    <canvas class="char" id="myChart"></canvas>
+    <canvas class="dep" id="myDep"></canvas>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+<script>const ctx = document.getElementById('myChart');
+const config = {
+  type: 'doughnut',
+  data: {
+    labels: ['Janv-24', 'Févr-24', 'Mars-24', 'Avr-24', 'Mai-24'],
+    datasets: [{
+      label: 'Livraisons',
+      data: [432, 543, 324, 843, 456],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(153, 102, 255)'
+      ],
+      hoverOffset: 7
+    }]
+  }
+};
+new Chart(ctx, config);
+
+const cty = document.getElementById('myDep').getContext('2d');
+const configu = {
+  type: 'line',
+  data: {
+    labels: ['Janv-24', 'Févr-24', 'Mars-24', 'Avr-24', 'Mai-24'],
+    datasets: [{
+      label: 'Depenses',
+      data: [432, 543, 324, 843, 456],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(153, 102, 255)'
+      ],
+      hoverOffset: 7
+    }]
+  }
+};
+new Chart(cty, configu);</script>-->
+{% endblock %}

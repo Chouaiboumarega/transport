@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier User{% endblock %}
+
+{% block body %}
+<div class="V8">
+</div>
+<button class="annuler"><a class="" href="{{path ('chauffeurs')}}">Annuler</a></button>
+<h1 class="chauffeur">Nouveau chauffeur</h1>
+<div class="chauffeur">
+    {{ form_start(form) }}
+        <div class="nomchauffeur">
+        {{ form_row(form.nom) }}
+        </div>
+         <div class="prenomchauffeur">
+        {{ form_row(form.prenom) }}
+        </div>
+        <div class="permis">
+        {{ form_row(form.permis) }}
+        </div>
+        <div class="naissance">
+        {{ form_row(form.date) }}
+        </div>
+        <div class="embauche">
+        {{ form_row(form.embauche) }}
+         </div>
+          <div class="contrat">
+        {{ form_row(form.contrat) }}
+         </div>
+        
+    </div>
+    
+        <button class="validerchauffeur" type="submit">Valider</button>
+   
+    {{ form_end(form) }}
+
+{% endblock %}

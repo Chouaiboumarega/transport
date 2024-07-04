@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="V8">
+</div>
+
+<img class="camions" src="../asset/images/camions.png" alt="">
+   <div class="contact">
+        <div class="cont">
+            {{ form(form.email) }}
+        </div>
+        <div class="forme1">
+            {{ form(form.content) }}
+        </div>
+    </div> 
+    
+{% endblock %}

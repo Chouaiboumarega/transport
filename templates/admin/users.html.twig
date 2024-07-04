@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des utilisateurs{% endblock %}
+
+{% block body %}
+<div class="V8">
+</div>
+    <h1 class="titre">Users</h1>
+
+<div class="container">
+   <div class="row">
+   {% for users in users %}
+    <div class="col-md-3 ">
+      <div class="card" style="width: 18rem;  margin-bottom: 34px;">
+        <div class="card-body">
+          <ul style="list-style-type: none;  margin: 5px 0;  padding: 0;">
+            <li>ID:{{users.id }}</li>
+            <li>@: {{users.email}}</li>
+            <li  class="raison">Fonction: </li>
+          
+       
+            {% for role in users.roles %}
+                {% if role == "ROLE_ADMIN" %}
+                    Administrateur
+                    
+                {% elseif role == "ROLE_USER" %}
+                    Utilisateur
+                {% endif %}
+            {% endfor %}
+       
+         <br/>
+          <a href="{{ path('transporteur', {'id': users.id}) }}"><img class="oeil" src="" alt=""></a>
+          <button class="modif" type="button"><a class="modifier" href="{{ path('edituser', {'id': users.id}) }}">Modifier</a></button>
+          <button class="supp" type=""><a class="supprimer" href="{{ path('deleteuser', {'id': users.id}) }}">Supprimer</a></button>
+        </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}
